@@ -1,0 +1,76 @@
+header{
+    background-color: #1900ff;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.div-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu li{
+    margin: 0 60px 0 20px;
+}
+.hambur{
+    display: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+.hambur::before,
+.hambur::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+.buscar{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: 0.5s;
+}
+.buscar.abrir-bar{
+    width: 260px;
+}
+.lupa, .btn-fechar{
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.input-busc{
+    position: absolute;
+    left: 40px;
+    width:calc(100% - 120px) ;
+    height: 100%;
+    line-height: 40px;
+}
+.input-busc input{
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+}
